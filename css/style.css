@@ -1,0 +1,85 @@
+/**************************************************************
+Project name: Weather in Agrigento
+Author: Giuseppe Favaro'
+URL: https://giuseppefavaro.github.io/weather-app/
+***************************************************************/
+
+
+/* GLOBAL *************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    color: #263238;
+    background:  #f7fafc;
+}
+img {
+    display: block;
+}
+a {
+    color: #304FFE;
+}
+
+h1 {
+    margin: 0;
+}
+
+
+
+/* STRUCTURE ***********************/
+
+.sidenav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 400px;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: linear-gradient(225deg,rgba(0,220,192,1) 0%,rgba(0,90,240,1) 75%);
+    color: #fff;
+    padding: 50px;   
+}
+
+.content {
+    margin-left: 400px;
+    height: 100vh;
+    background: #f7fafc;
+    padding: 20px;
+}
+
+
+
+
+
+/* SIDENAV ********************/
+
+.sidenav .sidenav__logo {
+    margin-bottom: 15px;
+}
+
+
+
+/* CONTENT ********************/
+
+.content .content__comune {
+    background: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+
+
+
+
