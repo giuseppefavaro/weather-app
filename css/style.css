@@ -72,9 +72,19 @@ h1 {
 /* SIDENAV ********************/
 
 .sidenav .sidenav__logo {
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
+.sidenav label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.sidenav select {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
 
 
 /* CONTENT ********************/
