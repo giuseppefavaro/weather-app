@@ -57,6 +57,14 @@ h1 {
     padding: 20px;
 }
 
+.footer {
+    position: absolute;
+    bottom: 15px;
+    left: 45px;
+    font-size: 14px;
+    color: #fff;
+    padding: 15px;
+}
 
 
 
@@ -79,7 +87,39 @@ h1 {
 }
 
 
+/* FOOTER ***********************/
+
+.footer a {
+    color: #fff;
+}
 
 
 
+
+
+/* MOBILE ***********************/
+
+    /* STRUCTURE */
+
+    @media all and (max-width: 990px) {
+
+        .sidenav {
+            position: static;
+            width: 100%;
+            height: auto;
+            padding: 20px;
+        }
+        
+        .content {
+            margin-left: 0px;
+            height: auto;
+        }
+
+        .footer {
+            position: static;
+            background-color: #010e28;
+        }
+
+
+    }
 
