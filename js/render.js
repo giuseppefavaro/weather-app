@@ -1,9 +1,9 @@
 const createSelect = (comuni) => {
-    const sidenavSelect = document.querySelector(".sidenav__select");
+    const sidenavSelectDiv = document.querySelector(".sidenav__select");
     
     const optionElements = comuni.map( (comune) =>`<option value="${comune.value}">${comune.name}</option>`);
 
-    sidenavSelect.innerHTML =
+    sidenavSelectDiv.innerHTML =
     `
     <label for="comuni-select">Select a comune:</label>
     <select name="comuni-select" id="comuni-select">
