@@ -18,6 +18,8 @@ body {
     line-height: 30px;
     color: #263238;
     background:  #f7fafc;
+    position: relative;
+    min-height: 100vh;
 }
 img {
     display: block;
@@ -55,10 +57,13 @@ h1 {
     height: 100vh;
     background: #f7fafc;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footer {
-    position: absolute;
+    position: fixed;
     bottom: 15px;
     left: 45px;
     font-size: 14px;
@@ -89,11 +94,14 @@ h1 {
 
 /* CONTENT ********************/
 
-.content .content__comune {
+.box {
+    width: 100%;
+    max-width: 1200px;
+    padding: 40px;
+    margin-bottom: 30px;
     background: #fff;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 10px;
-    padding: 20px;
 }
 
 
@@ -107,7 +115,7 @@ h1 {
 
 
 
-/* MOBILE ***********************/
+/* RESPONSIVE ***********************/
 
     /* STRUCTURE */
 
@@ -123,11 +131,18 @@ h1 {
         .content {
             margin-left: 0px;
             height: auto;
+            
         }
 
         .footer {
-            position: static;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            padding: 30px 15px;
             background-color: #010e28;
+            
         }
 
 
