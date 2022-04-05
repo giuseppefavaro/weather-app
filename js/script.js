@@ -1,5 +1,5 @@
 import {comuniAG} from "./comuni.js";
-import {createSelect} from "./render.js";
+import {createSelect, createSinglePage} from "./render.js";
 
 // Render select
 createSelect(comuniAG);
@@ -28,7 +28,8 @@ comuniSelect.addEventListener("change", (e) => {
         fetch(`https://api.openweathermap.org/data/2.5/weather?q=${comuneSelected}&appid=1cbb1add7327a490fe3c4104696a56aa`)
         .then(response => response.json())
         .then(data => {
-            console.log(data);
+            // console.log(data);
+            createSinglePage(data);
         })
 
     }

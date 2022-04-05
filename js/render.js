@@ -13,4 +13,10 @@ const createSelect = (comuni) => {
 }
 
 
-export {createSelect};
+const createSinglePage = (data) => {
+    const boxDiv = document.querySelector(".box");
+    boxDiv.innerHTML = data.weather[0].description + data.main.temp +  data.main.temp_max +  data.main.temp_min +  data.main.humidity +  data.visibility  +  data.wind.speed  + data.main.sea_level;
+}
+
+
+export {createSelect, createSinglePage};
