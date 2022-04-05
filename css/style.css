@@ -161,9 +161,12 @@ h1 {
 .box__info li:last-child {
     border-bottom: none;
 }
-
-
-
+.box__info i {
+    margin-right: 10px;
+    font-size: 28px;
+    color: #263238;
+    vertical-align: middle;
+}
 .box__info strong {
     margin-right: 10px;
     color: #263238;
