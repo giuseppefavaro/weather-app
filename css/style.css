@@ -75,8 +75,12 @@ h1 {
 
 /* SIDENAV ********************/
 
-.sidenav .sidenav__logo {
+.sidenav__logo {
     margin-bottom: 25px;
+}
+
+.sidenav__select {
+    width: 100%;
 }
 
 .sidenav label {
@@ -88,6 +92,7 @@ h1 {
     border: none;
     border-radius: 5px;
     padding: 10px;
+    width: 100%;
 }
 
 
@@ -214,14 +219,17 @@ h1 {
 
 /* RESPONSIVE ***********************/
 
-    /* CONTENT */
 
     @media all and (max-width: 1200px) {
+
+        /* CONTENT */
+
         .box__content {
             flex-direction: column;
         }
         .box__img {
             width: 100%;
+            min-width: auto;
         }
         .box__info {
             width: 100%;
@@ -229,9 +237,11 @@ h1 {
 
     }
 
-    /* STRUCTURE */
+    
 
     @media all and (max-width: 990px) {
+
+        /* STRUCTURE */
 
         .sidenav {
             position: static;
@@ -257,10 +267,59 @@ h1 {
             justify-content: center;
             align-items: center;
             padding: 15px;
-            background-color: #010e28;
-            
+            background-color: #010e28;   
         }
 
+
+        /* NOTIFICATION */
+
+        .notification {
+            padding: 20px 0;
+        }
+        .notification h1 {
+            font-size: 30px;
+            line-height: 35px;
+        }
+        .notification p {
+            font-size: 24px;
+            line-height: 29px;
+        }
+
+
+        /* CONTENT */
+
+        .box {
+            padding: 20px;
+        }
+        .box__h1 {
+            font-size: 30px;
+            line-height: 35px;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+        .box__h2 {
+            font-size: 24px;
+            line-height: 29px;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+        .box__img .temperature {
+            font-size: 40px; 
+        }
+        .box__img figcaption {
+            font-size: 18px;
+        }
+        .box__info li {
+            padding: 10px;
+            font-size: 18px;
+        }
+        .box__info i {
+            margin-right: 5px;
+            font-size: 22px;
+        }
+        .box__info strong {
+            margin-right: 5px;
+        }
 
     }
 
