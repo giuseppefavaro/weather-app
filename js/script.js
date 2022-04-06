@@ -1,5 +1,5 @@
 import {comuniAG} from "./comuni.js";
-import {createSelect, createSinglePage} from "./render.js";
+import {createSelect, createSinglePage, createNotification} from "./render.js";
 
 // Render select
 createSelect(comuniAG);
@@ -7,10 +7,8 @@ createSelect(comuniAG);
 
 // Show message when no comune is selected
 const comuniSelect = document.querySelector("#comuni-select");
-const content = document.querySelector(".content")
-
 if (comuniSelect.value === "select") {
-    content.innerHTML = "Please select a comune";
+    createNotification();
 }
 
 
@@ -20,7 +18,7 @@ comuniSelect.addEventListener("change", (e) => {
     const comuneSelected = e.target.value;
 
     if (comuneSelected === "select") {
-        content.innerHTML = "Please select a comune";
+        createNotification();
     } else {
 
         // console.log(comuneSelected)

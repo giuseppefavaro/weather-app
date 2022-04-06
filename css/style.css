@@ -91,6 +91,7 @@ h1 {
 }
 
 
+
 /* CONTENT ********************/
 
 .box {
@@ -175,6 +176,30 @@ h1 {
 .box__info--full {
     width: 100%;
 }
+
+
+
+/* NOTIFICATION ***********************/
+
+.notification {
+    max-width: 850px;
+    padding: 50px 0;
+}
+.notification h1 {
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 30px;
+}
+.notification p {
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 30px;
+}
+.notification img {
+    width: 100%;
+    height: auto;
+}
+
 
 
 /* FOOTER ***********************/
