@@ -35,8 +35,8 @@ const createSinglePage = (data) => {
         <ul class="box__info">
             <li><i class="fa-solid fa-note-sticky"></i> <strong>Description:</strong> ${data.weather[0].description}</li>
             <li><i class="fa-solid fa-wind"></i> <strong>Wind:</strong>  ${data.wind.speed}</li>
-            <li><i class="fa-solid fa-temperature-full"></i> <strong>Max:</strong> ${data.main.temp_max}</li>
-            <li><i class="fa-solid fa-temperature-empty"></i> <strong>Min:</strong>  ${data.main.temp_min}</li>
+            <li><i class="fa-solid fa-temperature-full"></i> <strong>Max:</strong> ${data.main.temp_max}°</li>
+            <li><i class="fa-solid fa-temperature-empty"></i> <strong>Min:</strong>  ${data.main.temp_min}°</li>
         </ul>
     </div>
 </section>
