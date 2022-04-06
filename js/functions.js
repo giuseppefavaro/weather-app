@@ -1,4 +1,29 @@
-// Render tag select 
+// Fetch API *******************************************************************
+
+const getAPI = async (comuneSelected) => {
+
+    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${comuneSelected}&appid=1cbb1add7327a490fe3c4104696a56aa&units=metric`)
+
+    if (response.status >= 200 && response.status <= 299) {
+        const data = await response.json();
+        return data 
+
+    // API not reachable
+    } else {
+        // console.log(response.status)
+        const content = document.querySelector(".content");
+        content.innerHTML = `
+        <section class="box notification-404">
+        <p>API currently not reachable</p>
+        </section>`;
+    }
+    
+}
+
+
+
+// Render tag select ***********************************************************
+
 const createSelect = (comuni) => {
     const sidenavSelectDiv = document.querySelector(".sidenav__select");
     
@@ -15,7 +40,8 @@ const createSelect = (comuni) => {
 
 
 
-// Render single comume
+// Render single comume *********************************************************
+
 const createSinglePage = (data) => {
     const content = document.querySelector(".content");
 
@@ -61,7 +87,8 @@ const createSinglePage = (data) => {
 
 
 
-// Message when no comune is selected 
+// Message when no comune is selected *********************************************************
+
 const createNotification = () => {
     const content = document.querySelector(".content");
     content.innerHTML = `
@@ -76,4 +103,4 @@ const createNotification = () => {
 } 
 
 
-export {createSelect, createSinglePage, createNotification};
+export {getAPI, createSelect, createSinglePage, createNotification};

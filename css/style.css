@@ -204,6 +204,10 @@ h1 {
     width: 100%;
     height: auto;
 }
+.notification-404 {
+    background: #D81B60;
+    color: #fff;
+}
 
 
 
